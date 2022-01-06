@@ -16,6 +16,11 @@ https://github.com/owner/repo/releases/latest/download/asset-filename.tar.gz
 
 Those URLs are documented in [GitHub Help](https://help.github.com/en/github/administering-a-repository/linking-to-releases#linking-to-the-latest-release).
 
+### Inputs
+- `owner`: The name of the owner of the repo. Used to identify the owner of the repository.  Used when cutting releases for external repositories.  Default: Current owner
+- `repo`: The name of the repository. Used to identify the repository on which to release.  Used when cutting releases for external repositories. Default: Current repository
+- `release_id`: release id
+
 Minimal example workflow:
 
 ```yaml
